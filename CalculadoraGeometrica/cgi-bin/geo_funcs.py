@@ -1,4 +1,4 @@
-#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\\Users\\Alunos\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
 
 def print_header(title):
     print("Content-type:text/html\r\n\r\n")
