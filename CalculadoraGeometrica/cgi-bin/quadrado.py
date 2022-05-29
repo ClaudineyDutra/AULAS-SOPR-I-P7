@@ -1,4 +1,4 @@
-#C:\\Users\\Alunos\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+# C:\Users\Lenovo\PycharmProjects\aulas-sopr-I-p7\CalculadoraGeometrica\
 
 import cgitb
 import cgi
@@ -16,7 +16,7 @@ def area(valor):
     geo_funcs.print_header(title)
     print("<h1>Quadrado</h1><hr>")
     print("<p>Lado {}</p>".format(valor))
-    print("<p>Área do Quadrado: {:.1f} </p>".format(area_quad))
+    print("<p>Área do Quadrado: {} </p>".format(area_quad))
     print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
@@ -26,7 +26,7 @@ def perimetro(valor):
     geo_funcs.print_header(title)
     print("<h1>Quadrado</h1><hr>")
     print("<p>Lado {}</p>".format(valor))
-    print("<p>Perímetro do Quadrado: {:.1f} </p>".format(per_quad))
+    print("<p>Perímetro do Quadrado: {} </p>".format(per_quad))
     print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
@@ -37,8 +37,8 @@ def ambos(valor):
     geo_funcs.print_header(title)
     print("<h1>Quadrado</h1><hr>")
     print("<p>Lado {}</p>".format(valor))
-    print("<p>Perímetro do Quadrado: {:.1f} </p>".format(per_quad))
-    print("<p>Área do Quadrado: {:.1f} </p>".format(area_quad))
+    print("<p>Perímetro do Quadrado: {} </p>".format(per_quad))
+    print("<p>Área do Quadrado: {} </p>".format(area_quad))
     print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 

@@ -1,4 +1,4 @@
-#C:\\Users\\Alunos\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
 import cgitb
 import cgi
 import geo_funcs
@@ -37,10 +37,10 @@ def ambos(diagonal_maior, diagonal_menor, lado):
     print("<h1>Losango</h1><hr>")
     print("<p>Lado {}</p>".format(lado))
     print("<p>Diagonal Maior {}</p>".format(diagonal_maior))
-    print("<p>Diagonal Menor: {:.1f}".format(diagonal_menor))
-    print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
-    print("<p>Área do Losango: {:.1f} </p>".format(area_los))
-    print("<br><br>Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("<p>Diagonal Menor: {}</p>".format(diagonal_menor))
+    # print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
+    # print("<p>Área do Losango: {} </p>".format(area_los))
+    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario

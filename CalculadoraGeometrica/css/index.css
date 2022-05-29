@@ -1,68 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background: #F6F9FF;
+    background: linear-gradient(to top, #42FAF2, #30BCE3);
     width: 100vw;
     height: 100vh;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-
-.cabecalho{
-    background: blue;
-    height: 20vh;
-    width: 100%;
-
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.formas{
-    background: red;
-    width: 100%;
-    height: 80vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+main.formas{
+    display:flex;
 }
 
-.formas .opcoes{
-    width: 200px;
-    height: 100px;
-
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 50px;
-}
-
-.formas .opcoes a{
-    text-decoration: none;
-
+main.formas section.forma{
+    background: linear-gradient(to bottom, #30BCE3, #359DFC);
+    border-radius: 32px;
+    border: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
+    margin-left: 64px;
+    padding: 32px;
 }
 
-.formas .opcoes:first-child{
+main.formas section.forma:first-child{
     margin-left: 0;
 }
 
-.formas .opcoes a .imagem{
-    height: 100px;
-    width: 100%;
+main.formas section.forma button{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 32px;
+    border: 0;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right, #30E3A7, #35FC81);
 }
 
-.formas .opcoes .imagem{
-    margim-bottom: 20px;
+main.formas section.forma button:hover{
+    background: linear-gradient(to left, #30E3A7, #35FC81);
+    font-size: 10px;
 }

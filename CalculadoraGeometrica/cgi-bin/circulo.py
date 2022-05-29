@@ -1,4 +1,4 @@
-#C:\\Users\\Alunos\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
 import cgitb
 import cgi
 import math
@@ -15,8 +15,8 @@ def area(raio):
 
     geo_funcs.print_header(title)
     print("<h1>Círculo</h1><hr>")
-    print("<p>Raio: {:.1f}".format(raio))
-    print("<p>Área do círculo: {:.1f}".format(area_circ))
+    print("<p>Raio: {:.1f}</p>".format(raio))
+    print("<p>Área do círculo: {:.1f}</p>".format(area_circ))
     print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
@@ -41,6 +41,7 @@ def ambos(raio):
     print("<p>Área do Círculo: {:.1f} </p>".format(area_circ))
     print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
+
 
 # recebe o valor do lado do usuario
 option = int(form.getvalue('escolha'))
