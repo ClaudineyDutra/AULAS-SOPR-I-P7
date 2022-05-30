@@ -1,4 +1,4 @@
-#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
+#C:\Users\Alunos\PycharmProjects\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import math
@@ -17,7 +17,7 @@ def area(raio):
     print("<h1>Círculo</h1>")
     print("<p>Raio: {:.1f}</p>".format(raio))
     print("<p>Área do círculo: {:.1f}</p>".format(area_circ))
-    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../circulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def perimetro(raio):
@@ -27,7 +27,7 @@ def perimetro(raio):
     print("<h1>Círculo</h1>")
     print("<p>Raio: {:.1f}".format(raio))
     print("<p>Perímetro do círculo: {:.1f}".format(per_circ))
-    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../circulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def ambos(raio):
@@ -39,7 +39,7 @@ def ambos(raio):
     print("<p>Base {}</p>".format(raio))
     print("<p>Perímetro do Círculo: {:.1f} </p>".format(per_circ))
     print("<p>Área do Círculo: {:.1f} </p>".format(area_circ))
-    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../circulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 

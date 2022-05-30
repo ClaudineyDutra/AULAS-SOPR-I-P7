@@ -1,4 +1,4 @@
-#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
+#C:\Users\Alunos\PycharmProjects\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import geo_funcs
@@ -16,7 +16,7 @@ def area(base, altura):
     print("<p>Base {}</p>".format(base))
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Área do Triângulo: {:.1f} </p>".format(area_tri))
-    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../triangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def perimetro(base, lado1,lado2):
@@ -28,7 +28,7 @@ def perimetro(base, lado1,lado2):
     print("<p>Lado: {:.1f}".format(lado1))
     print("<p>Lado: {:.1f}".format(lado2))
     print("<p>Perímetro do Triângulo: {:.1f} </p>".format(per_tri))
-    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../triangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def ambos(base, altura, lado1, lado2):
@@ -43,7 +43,7 @@ def ambos(base, altura, lado1, lado2):
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Perímetro do Triângulo: {:.1f} </p>".format(per_tri))
     print("<p>Área do Triângulo: {:.1f} </p>".format(area_tri))
-    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../triangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario

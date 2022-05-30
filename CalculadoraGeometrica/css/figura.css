@@ -27,6 +27,7 @@ form{
 }
 
 form .buttom{
+    background: linear-gradient(to right, #30E3A7, #35FC81);
     width: 100px;
     height: 30px;
     border: 0;
@@ -34,7 +35,14 @@ form .buttom{
     cursor: pointer;
 }
 
+form .buttom:hover{
+    height: 40px;
+    background: linear-gradient(to left, #30E3A7, #35FC81);
+
+}
+
 button{
+    background: linear-gradient(to right, #30E3A7, #35FC81);
     width: 150px;
     height: 30px;
     border: 0;
@@ -42,5 +50,10 @@ button{
     cursor: pointer;
 
     margin-top: 32px;
+}
+
+button:hover{
+    height: 40px;
+    background: linear-gradient(to left, #30E3A7, #35FC81);
 }
 

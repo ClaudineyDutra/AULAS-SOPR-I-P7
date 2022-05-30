@@ -1,4 +1,4 @@
-#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
+#C:\Users\Alunos\PycharmProjects\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import geo_funcs
@@ -16,7 +16,7 @@ def area(diagonal_maior, diagonal_menor):
     print("<p>Diagonal Maior {}</p>".format(diagonal_maior))
     print("<p>Diagonal Menor: {:.1f}".format(diagonal_menor))
     print("<p>Área do Losango: {:.1f} </p>".format(area_los))
-    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../losango.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def perimetro(lado):
@@ -26,7 +26,7 @@ def perimetro(lado):
     print("<h1>Losango</h1>")
     print("<p>Lado: {}".format(lado))
     print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
-    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../losango.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def ambos(diagonal_maior, diagonal_menor, lado):
@@ -40,7 +40,7 @@ def ambos(diagonal_maior, diagonal_menor, lado):
     print("<p>Diagonal Menor: {}</p>".format(diagonal_menor))
     print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
     print("<p>Área do Losango: {} </p>".format(area_los))
-    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../losango.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario

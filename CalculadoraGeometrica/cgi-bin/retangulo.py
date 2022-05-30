@@ -1,4 +1,4 @@
-#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
+#C:\Users\Alunos\PycharmProjects\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import geo_funcs
@@ -16,7 +16,7 @@ def area(base, altura):
     print("<p>Base {}</p>".format(base))
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Área do Retângulo: {:.1f} </p>".format(area_ret))
-    print("Clique <a href=\'../retangulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../retangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def perimetro(base, altura):
@@ -27,7 +27,7 @@ def perimetro(base, altura):
     print("<p>Base {}</p>".format(base))
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Perímetro do Retângulo: {:.1f} </p>".format(per_ret))
-    print("Clique <a href=\'../retangulo.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../retangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 def ambos(base, altura):
@@ -40,7 +40,7 @@ def ambos(base, altura):
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Perímetro do Retângulo: {:.1f} </p>".format(per_ret))
     print("<p>Área do Retângulo: {:.1f} </p>".format(area_ret))
-    print("Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
+    print("<a href=\'../retangulo.html\'><button class='buttom'>Calcular novamente</button></a>")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario
