@@ -8,11 +8,12 @@
 }
 
 body{
+    background: linear-gradient(to top, #42FAF2, #30BCE3);
     width: 100vw;
     height: 100vh;
 
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

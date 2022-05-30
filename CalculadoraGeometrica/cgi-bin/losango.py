@@ -1,4 +1,4 @@
-#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import geo_funcs
@@ -12,21 +12,21 @@ def area(diagonal_maior, diagonal_menor):
     area_los = diagonal_maior * diagonal_menor
 
     geo_funcs.print_header(title)
-    print("<h1>Losango</h1><hr>")
+    print("<h1>Losango</h1>")
     print("<p>Diagonal Maior {}</p>".format(diagonal_maior))
     print("<p>Diagonal Menor: {:.1f}".format(diagonal_menor))
     print("<p>Área do Losango: {:.1f} </p>".format(area_los))
-    print("<br><br>Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def perimetro(lado):
     per_los = lado * 4
 
     geo_funcs.print_header(title)
-    print("<h1>Losango</h1><hr>")
+    print("<h1>Losango</h1>")
     print("<p>Lado: {}".format(lado))
     print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
-    print("<br><br>Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def ambos(diagonal_maior, diagonal_menor, lado):
@@ -34,12 +34,12 @@ def ambos(diagonal_maior, diagonal_menor, lado):
     area_los = diagonal_maior * diagonal_menor
 
     geo_funcs.print_header(title)
-    print("<h1>Losango</h1><hr>")
+    print("<h1>Losango</h1>")
     print("<p>Lado {}</p>".format(lado))
     print("<p>Diagonal Maior {}</p>".format(diagonal_maior))
     print("<p>Diagonal Menor: {}</p>".format(diagonal_menor))
-    # print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
-    # print("<p>Área do Losango: {} </p>".format(area_los))
+    print("<p>Perímetro do Losango: {:.1f} </p>".format(per_los))
+    print("<p>Área do Losango: {} </p>".format(area_los))
     print("Clique <a href=\'../losango.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 

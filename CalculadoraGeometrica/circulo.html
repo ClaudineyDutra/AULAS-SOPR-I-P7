@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Circulo</title>
-    <link rel="stylesheet" href="css/circulo.css">
+    <link rel="stylesheet" href="css/figura.css">
 </head>
 <body>
    <h1>Circulo</h1>
@@ -11,16 +11,13 @@
     <form method="post" action="cgi-bin/circulo.py" >
         Raio<input name="raio" type="text">
 
-        <input type="radio" id="per" name="escolha" value="0">
-        <label for="per">Perimetro</label><br>
+        Perimetro<input type="radio" name="escolha" value="0">
 
-        <input type="radio" id="area" name="escolha" value="1">
-        <label for="area">Área</label>
+        Área<input type="radio" name="escolha" value="1">
 
-        <input type="radio" id="ambos" name="escolha" value="2">
-        <label for="ambos">Ambos</label>
+        Ambos<input type="radio" name="escolha" value="2">
 
-        <input class="buttom" type="submit" value="Enviar">
+        <input type="submit" class="buttom" value="Enviar">
     </form>
     <a href="index.html"><button>Início</button></a>
 

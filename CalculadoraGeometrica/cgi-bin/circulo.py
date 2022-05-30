@@ -1,4 +1,4 @@
-#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import math
@@ -14,20 +14,20 @@ def area(raio):
     area_circ = math.pi * math.pow(raio_, 2)
 
     geo_funcs.print_header(title)
-    print("<h1>Círculo</h1><hr>")
+    print("<h1>Círculo</h1>")
     print("<p>Raio: {:.1f}</p>".format(raio))
     print("<p>Área do círculo: {:.1f}</p>".format(area_circ))
-    print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def perimetro(raio):
     per_circ = 2 * math.pi * raio
 
     geo_funcs.print_header(title)
-    print("<h1>Círculo</h1><hr>")
+    print("<h1>Círculo</h1>")
     print("<p>Raio: {:.1f}".format(raio))
     print("<p>Perímetro do círculo: {:.1f}".format(per_circ))
-    print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def ambos(raio):
@@ -35,11 +35,11 @@ def ambos(raio):
     area_circ = math.pi * math.pow(raio_, 2)
 
     geo_funcs.print_header(title)
-    print("<h1>Círculo</h1><hr>")
+    print("<h1>Círculo</h1>")
     print("<p>Base {}</p>".format(raio))
     print("<p>Perímetro do Círculo: {:.1f} </p>".format(per_circ))
     print("<p>Área do Círculo: {:.1f} </p>".format(area_circ))
-    print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 

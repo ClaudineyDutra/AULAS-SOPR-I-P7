@@ -1,4 +1,4 @@
-# C:\Users\Lenovo\PycharmProjects\aulas-sopr-I-p7\CalculadoraGeometrica\
+#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
 
 import cgitb
 import cgi
@@ -14,20 +14,20 @@ def area(valor):
     area_quad = valor * valor
 
     geo_funcs.print_header(title)
-    print("<h1>Quadrado</h1><hr>")
+    print("<h1>Quadrado</h1>")
     print("<p>Lado {}</p>".format(valor))
     print("<p>Área do Quadrado: {} </p>".format(area_quad))
-    print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def perimetro(valor):
     per_quad = valor * 4
 
     geo_funcs.print_header(title)
-    print("<h1>Quadrado</h1><hr>")
+    print("<h1>Quadrado</h1>")
     print("<p>Lado {}</p>".format(valor))
     print("<p>Perímetro do Quadrado: {} </p>".format(per_quad))
-    print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def ambos(valor):
@@ -35,11 +35,11 @@ def ambos(valor):
     area_quad = valor * valor
 
     geo_funcs.print_header(title)
-    print("<h1>Quadrado</h1><hr>")
+    print("<h1>Quadrado</h1>")
     print("<p>Lado {}</p>".format(valor))
     print("<p>Perímetro do Quadrado: {} </p>".format(per_quad))
     print("<p>Área do Quadrado: {} </p>".format(area_quad))
-    print("<br><br>Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../quadrado.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario

@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Losango</title>
+    <link rel="stylesheet" href="css/figura.css">
 </head>
 <body>
-<h1>Losango</h1><hr>
+    <h1>Losango</h1>
 
-<form method="post" action="cgi-bin/losango.py">
-    Diagonal Maior<input name="diaMaior" type="text">
-    Diagonal Menor<input name="diaMenor" type="text">
-    Lado<input name="lado" type="text">
+    <form method="post" action="cgi-bin/losango.py">
+        Diagonal Maior<input name="diaMaior" type="text">
+        Diagonal Menor<input name="diaMenor" type="text">
+        Lado<input name="lado" type="text">
 
-    <input type="radio" id="per" name="escolha" value="0">
-    <label for="per">Perimetro</label><br>
+        <input type="radio" id="per" name="escolha" value="0">
+        <label for="per">Perimetro</label>
 
-    <input type="radio" id="area" name="escolha" value="1">
-    <label for="area">Área</label><br>
+        <input type="radio" id="area" name="escolha" value="1">
+        <label for="area">Área</label>
 
-    <input type="radio" id="ambos" name="escolha" value="2">
-    <label for="ambos">Ambos</label><br>
+        <input type="radio" id="ambos" name="escolha" value="2">
+        <label for="ambos">Ambos</label>
 
-    <input type="submit" value="Enviar">
-</form>
-<br><br>
-<a href="index.html">Início</a>
+        <input type="submit" class="buttom" value="Enviar">
+    </form>
+
+    <a href="index.html"><button>Início</button></a>
 
 </body>
 </html>

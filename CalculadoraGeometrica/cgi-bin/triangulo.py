@@ -1,4 +1,4 @@
-#C:\\Users\\Lenovo\\PycharmProjects\\aulas-sopr-I-p7\\CalculadoraGeometrica\\venv
+#C:\Users\Lenovo\Desktop\aulas-sopr-I-p7\
 import cgitb
 import cgi
 import geo_funcs
@@ -12,23 +12,23 @@ def area(base, altura):
     area_tri = (base * altura) / 2
 
     geo_funcs.print_header(title)
-    print("<h1>Triângulo</h1><hr>")
+    print("<h1>Triângulo</h1>")
     print("<p>Base {}</p>".format(base))
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Área do Triângulo: {:.1f} </p>".format(area_tri))
-    print("<br><br>Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def perimetro(base, lado1,lado2):
     per_tri = base + lado1 + lado2
 
     geo_funcs.print_header(title)
-    print("<h1>Triângulo</h1><hr>")
+    print("<h1>Triângulo</h1>")
     print("<p>Base {}</p>".format(base))
     print("<p>Lado: {:.1f}".format(lado1))
     print("<p>Lado: {:.1f}".format(lado2))
     print("<p>Perímetro do Triângulo: {:.1f} </p>".format(per_tri))
-    print("<br><br>Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 def ambos(base, altura, lado1, lado2):
@@ -36,14 +36,14 @@ def ambos(base, altura, lado1, lado2):
     area_tri = (base * altura) / 2
 
     geo_funcs.print_header(title)
-    print("<h1>Triângulo</h1><hr>")
+    print("<h1>Triângulo</h1>")
     print("<p>Base {}</p>".format(base))
     print("<p>Lado {}</p>".format(lado1))
     print("<p>Lado {}</p>".format(lado2))
     print("<p>Altura: {:.1f}".format(altura))
     print("<p>Perímetro do Triângulo: {:.1f} </p>".format(per_tri))
     print("<p>Área do Triângulo: {:.1f} </p>".format(area_tri))
-    print("<br><br>Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
+    print("Clique <a href=\'../triangulo.html\'>aqui</a> para novo cálculo.")
     geo_funcs.print_footer()
 
 # recebe o valor do lado do usuario

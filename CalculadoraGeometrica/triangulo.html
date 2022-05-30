@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Triângulo</title>
+    <link rel="stylesheet" href="css/figura.css">
 </head>
 <body>
-<h1>Triângulo</h1><hr>
+    <h1>Triângulo</h1>
 
-<form method="post" action="cgi-bin/triangulo.py">
-    Base<input name="base" type="text">
-    Lado<input name="lado1" type="text">
-    Lado<input name="lado2" type="text">
-    Altura<input name="altura" type="text">
+    <form method="post" action="cgi-bin/triangulo.py">
+        Base<input name="base" type="text">
+        Lado<input name="lado1" type="text">
+        Lado<input name="lado2" type="text">
+        Altura<input name="altura" type="text">
 
-    <input type="radio" id="per" name="escolha" value="0">
-    <label for="per">Perimetro</label><br>
+        Perímetro<input type="radio" name="escolha" value="0">
 
-    <input type="radio" id="area" name="escolha" value="1">
-    <label for="area">Área</label><br>
+        Área<input type="radio" name="escolha" value="1">
 
-    <input type="radio" id="ambos" name="escolha" value="2">
-    <label for="ambos">Ambos</label><br>
+        Ambos<input type="radio" name="escolha" value="2">
 
-    <input type="submit" value="Enviar">
-</form>
-<br><br>
-<a href="index.html">Início</a>
+        <input type="submit" class="buttom" value="Enviar">
+    </form>
+
+    <a href="index.html"><button>Início</button></a>
 
 </body>
 </html>
