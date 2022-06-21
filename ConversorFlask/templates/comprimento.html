@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block head %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+{% block title %} COMPRIMENTO {% endblock %}
+
+{% block content %}
+    {% if resultado %}
+            <h2>Seu resultado é {{resultado}}</h2>
+    {% else %}
+        <form action="/comprimento/" method="POST">
+        <div>
+            <label for="valor">Valor para conversão</label>
+            <input type="text" name="valor" id="valor">
+        </div>
+        <div>
+            <input type="radio" id="Metro_Kilometro" name="conversao" value="Metro_Kilometro">
+            <label for="Metro_Kilometro">Metro para Kilometro</label>
+        </div>
+        <div>
+            <input type="radio" id="Metro_Hectometro" name="conversao" value="Metro_Hectometro">
+            <label for="Metro_Hectometro">Metro para Hectometro</label>
+        </div>
+        <div>
+            <input type="radio" id="Metro_Decametro" name="conversao" value="Metro_Decametro">
+            <label for="Metro_Decametro">Metro para Decametro</label>
+        </div>
+        <div>
+            <input type="radio" id="Metro_Decimetro" name="conversao" value="Metro_Decimetro">
+            <label for="Metro_Decimetro">Metro para Decimetro</label>
+        </div>
+        <div>
+            <input type="radio" id="Metro_Centimetro" name="conversao" value="Metro_Centimetro">
+            <label for="Metro_Centimetro">Metro para Centimetro</label>
+        </div>
+        <div>
+            <input type="radio" id="Metro_Milimetro" name="conversao" value="Metro_Milimetro">
+            <label for="Metro_Milimetro">Metro para Milimetro</label>
+        </div>
+        <div>
+            <input type="submit" value="Converter">
+        </div>
+    </form>
+    {% endif %}
+
+{% endblock %}

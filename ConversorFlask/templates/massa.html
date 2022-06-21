@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block head %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+
+{% block title %} MASSA {% endblock %}
+
+{% block content %}
+    {% if resultado %}
+            <h1>Seu resultado é {{resultado}}</h1>
+    {% else %}
+        <form action="/massa/" method="POST">
+            <div>
+                <label for="valor">Valor para conversão</label>
+                <input type="text" name="valor" id="valor">
+            </div>
+            <div>
+                <input type="radio" id="Grama_Kilograma" name="conversao" value="Grama_Kilograma">
+                <label for="Grama_Kilograma">Grama para Kilograma</label>
+            </div>
+            <div>
+                <input type="radio" id="Grama_Hectagrama" name="conversao" value="Grama_Hectagrama">
+                <label for="Grama_Hectagrama">Metro para Hectograma</label>
+            </div>
+            <div>
+                <input type="radio" id="Grama_decagrama" name="conversao" value="Grama_decigrama">
+                <label for="Grama_decagrama">Metro para Decagrama</label>
+            </div>
+            <div>
+                <input type="radio" id="Grama_decigrama" name="conversao" value="Grama_decigrama">
+                <label for="Grama_decigrama">Metro para Decigrama</label>
+            </div>
+            <div>
+                <input type="radio" id="Grama_Centigrama" name="conversao" value="Grama_Centigrama">
+                <label for="Grama_Centigrama">Metro para Centigrama</label>
+            </div>
+            <div>
+                <input type="radio" id="Grama_Miligrama" name="conversao" value="Grama_Miligrama">
+                <label for="Grama_Miligrama">Metro para Miligrama</label>
+            </div>
+            <div>
+                <input type="submit" value="Converter">
+            </div>
+        </form>
+    {% endif %}
+{% endblock %}

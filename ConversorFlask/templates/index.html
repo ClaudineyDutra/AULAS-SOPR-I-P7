@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head%}
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/index.css">
+    {% endblock%}
+    <title>{% block title %}Conversor de medidas{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Escolha a Grandeza</h1>
+    </header>
+    <main>
+        <div class="options">
+            <section>
+                <h3>TEMPERATURA</h3>
+                <a href="/temperatura/"><button>Calcular</button></a>
+            </section>
+            <section>
+                <h3>COMPRIMENTO</h3>
+                <a href="/comprimento/"><button>Calcular</button></a>
+            </section>
+                <h3>MASSA</h3>
+                <a href="/massa/"><button>Calcular</button></a>
+            </section>
+        </div>
+    </main>
+    <section>
+            {% block content %}{% endblock %}
+    </section>
+</body>
+</html>

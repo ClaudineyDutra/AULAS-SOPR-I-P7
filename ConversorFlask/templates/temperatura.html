@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block head %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/index.css">
+{% endblock %}
+
+{% block title %} TEMPERATURA {% endblock %}
+
+{% block content %}
+    {% if resultado %}
+            <h3>Seu resultado é {{resultado}}</h3>
+    {% else %}
+        <form action="/temperatura/" method="POST">
+            <div>
+                <label for="valor">Valor para conversão</label>
+                <input type="text" name="valor" id="valor">
+            </div>
+            <div>
+                <input type="radio" id="Kelvin_Celcius" name="conversao" value="Kelvin_Celcius">
+                <label for="Kelvin_Celcius">Kelvin para Celcius</label>
+            </div>
+            <div>
+                <input type="radio" id="Kelvin_Fahrenheit" name="conversao" value="Kelvin_Fahrenheit">
+                <label for="Kelvin_Fahrenheit">Kelvin para Fahrenheit</label>
+            </div>
+            <div>
+                <input type="radio" id="Celcius_Fahrenheit" name="conversao" value="Celcius_Fahrenheit">
+                <label for="Celcius_Fahrenheit">Celcius para Fahrenheit</label>
+            </div>
+            <div>
+                <input type="radio" id="Celcius_Kelvin" name="conversao" value="Celcius_Kelvin">
+                <label for="Celcius_Kelvin">Celcius para Kelvin</label>
+            </div>
+            <div>
+                <input type="radio" id="Fahrenheit_Celcius" name="conversao" value="Fahrenheit_Celcius">
+                <label for="Fahrenheit_Celcius">Fahrenheit para Celcius</label>
+            </div>
+            <div>
+                <input type="radio" id="Fahrenheit_Kelvin" name="conversao" value="Fahrenheit_Kelvin">
+                <label for="Fahrenheit_Kelvin">Fahrenheit para Kelvin</label>
+            </div>
+            <div>
+                <input type="submit" value="Converter">
+            </div>
+        </form>
+    {% endif %}
+{% endblock %}
